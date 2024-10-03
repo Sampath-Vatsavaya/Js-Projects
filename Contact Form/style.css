@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(#87cEEB,#FFC5c5);
+}
+.contact-container
+{
+   display: flex; 
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+}
+
+.left-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.left-container h2{
+    font-weight: 700;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.left-container hr{
+    border: none;
+    width: 120px;
+    background-color:  #a363aa ;
+    height: 5px;
+    border-radius: 10px;
+
+}
+.contact-inputs , #message
+{
+    width:400px;
+    height: 50px;
+    border: 0;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 25px;
+    color:#666;
+    font-weight: 600px;
+
+}
+#message{
+    height: 140px;
+    border-radius: 20px;
+
+}
+.left-container button
+{
+    border: 0;
+    outline: none;
+    background: linear-gradient(270deg,#ff994f,#fabd86);
+    font-size: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.contact-inputs:focus
+{
+    border: 2px solid #ff994f;
+
+
+
+}
+.left-container button:hover
+{
+    filter: brightness(120%);
+    font-weight: 800;
+}
+
+@media (max-width:800px) {
+    .right-container
+    {
+        display: none;
+    }
+    
+}
